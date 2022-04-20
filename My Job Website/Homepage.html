@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>
+                Archie Hickmott | Resum&#233;
+            </title>
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                  } else {
+                    navbar.classList.remove("sticky");
+                  }
+                }
+            </script>
+            <style>
+                .parallax {
+                    background-image: url("Assets/Pictures/Bg_Photo.jpg");
+                    min-height: 500px;
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    z-index: 0;
+                }
+                header {
+                    text-align: center;
+                    box-shadow: 0px 10px 5px grey;
+                    padding-bottom: 30px;
+                    z-index: 1;
+                }
+                article {
+                    text-align: center;
+                    box-shadow: 0px 10px 5px grey;
+                    padding-bottom: 30px;
+                    z-index: 1;
+                }
+                section {
+                    font-size: 40px;
+                }
+                nav {
+                    overflow: hidden;
+                    background-color: lightgrey;
+                }
+
+                nav a {
+                    float: left;
+                    display: block;
+                    color: black;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 17px;
+                }
+
+                nav a:hover {
+                    background-color: #ddd;
+                    color: white;
+                }
+
+                nav a.active {
+                    background-color: Grey;
+                    color: black;
+                }
+
+                .content {
+                    padding: 16px;
+                }
+
+                .sticky {
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                }
+
+                .sticky + .content {
+                    padding-top: 60px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="parallax"></div>
+
+            <header>
+                <h1>
+                    Archie Hickmott | resum&#233; | HomePage
+                </h1>
+                <nav>
+                    <a class="active" href="javascript:void(0)">Home</a>
+                    <a href="Folio_of_works.html">Folio of Works</a>
+                    <a href="Contact_me.html">Contact</a>
+                </nav>
+            </header>
+            
+            <div class="empty">
+            
+            <div class="parallax" style="min-height: 50px;"></div>
+
+            <article>
+                <section>
+                    <p>
+                        Phone:	0490 825 335 <br>
+                        Email:	25hickmar@Gmail.com <br> 
+                        Address:	58 cotton street <br>
+                    </p>
+                </section>
+                <section>
+                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                </section>
+            </article>
+        </body>
+    </html>
