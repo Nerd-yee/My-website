@@ -5,24 +5,47 @@
 
             <link rel="stylesheet" href="Global_Stylesheet.css">
 
+
             <title>
                 Archie Hickmott | Folio of works
             </title>
             <script>
-                window.onscroll = function() {myFunction()};
-                
-                var navbar = document.getElementById("navbar");
-                var sticky = navbar.offsetTop;
-                
-                function myFunction() {
-                  if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                  } else {
-                    navbar.classList.remove("sticky");
-                  }
-                }
             </script>
             <style>
+                .column {
+                    -ms-flex: 25%;
+                    flex: 25%;
+                    max-width: 50%;
+                    padding: 0 4px;
+                }
+
+                .row {
+                    display: -ms-flexbox;
+                    -ms-flex-wrap: wrap;
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 4px;
+                }
+
+                .Image img{
+                    margin-top: 8px;
+                    vertical-align: middle;
+                }
+                @media screen and (max-width: 800px) {
+                    .column {
+                        -ms-flex: 50%;
+                        flex: 50%;
+                        max-width: 50%;
+                    }
+                }
+
+                @media screen and (max-width: 600px) {
+                    .column {
+                        -ms-flex: 100%;
+                        flex: 100%;
+                        max-width: 100%;
+                    }
+                }
             </style>
         </head>
         <body>
@@ -57,6 +80,36 @@
                     <p>
 
                     </p>
+                    <table class="container">
+                        <tr class="Row">
+                            <td class="column">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_0668.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_0673.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_0681.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_0714.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_2477.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_2502.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_2509.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_3924.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_4121.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_5012.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_6606.jpg" alt="A photo that is one of my best works">
+                            </td>
+                            <td class="column">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_6680.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_6684.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_6690.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_6708.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_6766.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_6849.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_6870.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_6878.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_6886.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_6892.jpg" alt="A photo that is one of my best works">
+                                <img style="width: 100%;"src="Assets\Pictures\Folio Photos\IMG_6911.jpg" alt="A photo that is one of my best works">
+                            </td>
+                        </tr>
+                    </table>
                 </section>
             </article>
         </body>
